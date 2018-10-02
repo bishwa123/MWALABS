@@ -1,5 +1,7 @@
-//problem 1 using ES6 feature
+
 (function(){
+    'use strict'
+    //problem 1 using ES6 feature
     const uniArr = [4,1,5,7,2,3,1,4,6,5,2];
     console.log(`Original Array ${uniArr}`);
     const dupArr = removeDups(uniArr);
@@ -9,10 +11,6 @@
     function removeDups(arr){
         return [...new Set(arr)];
     }
-})();
-
-
-(function(){
     // problem 1 using promises
     var removeDupsPromise = function(data){
         return new Promise((resolve, reject) => {
