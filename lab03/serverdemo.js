@@ -16,7 +16,7 @@ http.createServer((request, response) => {
     var readStream = fs.createReadStream(filePath);
    //readStream.pipe(response);
    readStream.on("data", function(chunk){
-       response.write(chunk);
+       response.write(chunk.toString());
       // response.end();
    })
 }).listen(4000,'127.0.0.1');
