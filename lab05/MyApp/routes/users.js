@@ -5,6 +5,7 @@ const axios = require('axios');
 
 //1. USING   PROMISE
 router.get('/', function(req, res, next) {
+  
   axios.get('https://jsonplaceholder.typicode.com/users/')
   .then(function (response) {
     res.send( response.data);
