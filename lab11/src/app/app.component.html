@@ -1,0 +1,10 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <p>
+   Counter passed to child: {{counterRef}}
+  </p>
+  
+  <counter-app [counter] ="counter" (onValueChanged) = 'onCounterChanged($event)'></counter-app>
+</div>
+
+
